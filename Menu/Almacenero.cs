@@ -10,11 +10,7 @@ using System.Windows.Forms;
 
 namespace Menu
 {
-    /// <summary>
-    /// /RAAAAAAAAAAAAAAAAA
-    /// </summary>
-    /// si se pudo
-    /// aea
+
     public partial class Almacenero : Form
     {
         SqlConnection cn = new SqlConnection("server=DESKTOP-S92T72U ; database=Tienda ; integrated security = true");
@@ -170,5 +166,25 @@ namespace Menu
             }
             catch { }
         }
-    }
+
+
+		private void txtNombre_KeyUp(object sender, KeyEventArgs e)
+		{
+            cn.Open();
+
+            cmd = cn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM Producto where Descripcion like ('" + txtNombre.Text + "%')";
+            cmd.ExecuteNonQuery();
+
+            dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            cn.Close();
+        }
+	}
 }
