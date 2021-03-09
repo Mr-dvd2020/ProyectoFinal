@@ -76,6 +76,12 @@
     <Compile Include="Cajero.Designer.cs">
       <DependentUpon>Cajero.cs</DependentUpon>
     </Compile>
+    <Compile Include="DVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVD.Designer.cs">
+      <DependentUpon>DVD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cajero.resx">
       <DependentUpon>Cajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DVD.resx">
+      <DependentUpon>DVD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
