@@ -13,6 +13,7 @@ namespace Menu
     /// <summary>
     /// /RAAAAAAAAAAAAAAAAA
     /// </summary>
+    /// si se pudo
     public partial class Almacenero : Form
     {
         public Almacenero(string nombre)
