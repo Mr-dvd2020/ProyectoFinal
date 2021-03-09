@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Menu
 {
+    /// <summary>
+    /// /RAAAAAAAAAAAAAAAAA
+    /// </summary>
     public partial class Almacenero : Form
     {
         public Almacenero(string nombre)
