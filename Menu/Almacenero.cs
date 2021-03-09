@@ -14,6 +14,7 @@ namespace Menu
     /// /RAAAAAAAAAAAAAAAAA
     /// </summary>
     /// si se pudo
+    /// aea
     public partial class Almacenero : Form
     {
         public Almacenero(string nombre)
